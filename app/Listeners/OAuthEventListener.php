@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Events;
+namespace App\Listeners;
 
-use App\Listeners\EventListener;
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
