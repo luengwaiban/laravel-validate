@@ -5,6 +5,7 @@
  * Date: 18/5/14
  * Time: 下午4:32
  */
+namespace App\Http\Controllers;
 
 class WechatController extends BaseController{
 
