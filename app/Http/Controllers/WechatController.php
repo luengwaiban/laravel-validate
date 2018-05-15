@@ -11,9 +11,14 @@ class WechatController extends BaseController{
 
     public function serve(){
         $app = app('wechat.official_account.lwb_test');
-        $app->sever->push(function($message){
+        $app->server->push(function($message){
             return var_export($message,true);
         });
         return $app->server->serve();
+    }
+
+    public function user(){
+        $user = session('wechat.oauth_user.default');
+        var_dump($user);
     }
 }
